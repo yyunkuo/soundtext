@@ -1,8 +1,94 @@
+@font-face {
+    font-family: "ABC Whyte Edu Web";
+    src: url("./fonts/ABCWhyteEdu-Regular.woff2") format("woff2"),
+         url("./fonts/ABCWhyteEdu-Regular.woff") format("woff");
+}
+
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  canvas {
+    font-family: ABCWhyteEdu, sans-serif;
+      margin: 0px;
+      padding: 0;
+}
+
+canvas {
     display: block;
-  }
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 0.6;
+}
+
+p {
+    font-family:'Arial';
+    font-size: 20px;
+    line-height: 0.6;
+}
+
+
+.noMark {
+-webkit-user-select: none;
+-moz-user-select: none;
+}
+
+.wrapper {
+display: flex;
+
+/* This centers our sketch horizontally. */
+justify-content: center;
+
+/* This centers our sketch vertically. */
+align-items: center;
+}
+
+
+/* list */
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
   
+a:visited {
+color: black;
+}
+
+a:hover {
+text-decoration: underline;
+
+}
+a:active {
+text-shadow: rgb(171, 171, 171) 1px 0 10px;
+text-decoration: underline;
+color: black;
+}
+.btn:hover  {
+text-decoration: underline;
+}
+.active {
+text-shadow: rgb(171, 171, 171) 1px 0 10px;
+text-decoration: underline;
+color: black;
+}
+
+ul {
+list-style-type: none;
+position: absolute;
+margin: 0;
+padding: 0;
+bottom: 2vh;
+}
+
+li {
+font-weight: 400;
+font-size: 2vw;
+display: inline;
+margin-left: 2vw;
+}
+
+#wrapper_tags {
+/* margin-left: 1vw; */
+z-index: 10;
+}
+

@@ -41,9 +41,10 @@ function draw(){
     
     for (let i = index; i < said.length; i++) {
         x = said.charCodeAt(i);
-        x = map(said.charCodeAt(i), 97, 122, 10, 400);
+        x = map(said.charCodeAt(i), 97, 122, 10, 250);
         let y = said.length;
         y = map(said.length, 0, 50, 10, 400 );
-        ellipse(x, y, 10, 10);
+        background(x,y,255);
+        ellipse(x, y, 30, 30);
     }   
 }
