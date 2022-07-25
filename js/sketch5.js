@@ -34,16 +34,18 @@ function setup() {
 }
 
 function draw(){
-    //option1
     background(240);
     fill(0);
     rect(10, 100, said.length * 5, 20);
     
-    for (let i = index; i < said.length; i++) {
+    for (let i = 0; i < said.length-1; i++) {
        
         x = said.charCodeAt(i);
-        console.log(said.charCodeAt(i));
-        // console.log(said);
+
+        
+        let splitString = split(said, ' ');
+        
+        
         x = map(said.charCodeAt(i), 97, 122, 10, 250);
         let y = said.length;
         y = map(said.length, 0, 50, 10, 400 );
